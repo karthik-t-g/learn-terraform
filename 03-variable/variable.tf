@@ -12,19 +12,19 @@ variable "m" {
   default = [10, true, "something"]
 }
 
-output {
+output "x" {
   value= var.x
 }
-output {
+output "n" {
   value= "this is my name ${var.n[name]}"
 }
 
-output {
+output "x1" {
 
   value= "this is ${var.x}"
 }
 
-output {
+output "m" {
 
   value= "this is ${var.m[0]}"
 }
