@@ -16,7 +16,7 @@ output "x" {
   value= var.x
 }
 output "n" {
-  value= "this is my name ${var.n[name]}"
+  value= "this is my name ${var.n["name"]}"
 }
 
 output "x1" {
