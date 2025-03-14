@@ -5,3 +5,6 @@ resource "aws_instance" "web"{
         name="demo_instance"
         }
     }
+output "web" {
+    b=aws_instance.web.instance_type
+    }
