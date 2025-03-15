@@ -4,6 +4,6 @@ resource "null_resource" "test" {
 variable "component" {
 default = ["mongo","frontend","catalogue"]
 }
-#output "test" {
- # value = length(component)
-#}
+resource "null_resource" "test1" {
+  count= length(component)
+}
