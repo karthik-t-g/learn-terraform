@@ -1,4 +1,4 @@
-resource "null-resource" "test" {
+resource "null_resource" "test" {
   count=3
 }
 variable "component" {
