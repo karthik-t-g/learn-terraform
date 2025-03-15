@@ -4,6 +4,6 @@ resource "null_resource" "test" {
 variable "component" {
 default = ["frontend","mongo","catalogue"]
 }
-output "length" {
+output "test" {
   value = length(component)
 }
