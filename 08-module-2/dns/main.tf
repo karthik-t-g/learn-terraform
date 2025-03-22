@@ -3,8 +3,8 @@ resource "aws_route53_record" "frontend" {
   name    = "test1.karthi.com"
   type    = "A"
   ttl     = 15
-  records = [var.private_ip]
+  records = [var.input]
 
 }
 
-variable "private_ip" {}
+variable "input" {}

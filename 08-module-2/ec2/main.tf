@@ -8,7 +8,7 @@ resource "aws_instance" "test" {
   }
 }
 
-output "private_ip" {
+output "input" {
   value = aws_instance.test.private_ip
 
 }
