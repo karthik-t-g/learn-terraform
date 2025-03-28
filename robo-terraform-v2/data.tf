@@ -5,8 +5,8 @@ data "aws_ami" "ami" {
 }
 data "aws_security_groups" "sg" {
   filter {
-    name = "group-1"
-    values = ["allow-all1"]
+    name = "group-name"
+    values = ["default"]
   }
 }
 data "aws_route53_zone" "zone" {
