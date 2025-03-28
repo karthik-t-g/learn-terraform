@@ -10,5 +10,6 @@ data "aws_security_groups" "sg" {
   }
 }
 data "aws_route53_zone" "zone" {
-name = var.domain_name
+  name         = "karthi.com."
+  private_zone = true
 }
