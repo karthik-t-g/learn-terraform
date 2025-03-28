@@ -5,7 +5,7 @@ data "aws_ami" "ami" {
 }
 data "aws_security_groups" "sg" {
   filter {
-    name = "group-name"
+    name = "group-1"
     values = ["allow-all1"]
   }
 }
