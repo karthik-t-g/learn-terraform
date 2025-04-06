@@ -3,7 +3,7 @@ resource "aws_instance" "frontend" {
   instance_type = var.instance_type
   vpc_security_group_ids = data.aws_security_groups.sg.ids
   tags = {
-    name="frontend"
+    Name="frontend"
   }
 }
 resource "aws_route53_record" "frontend"{
@@ -18,7 +18,7 @@ resource "aws_instance" "mongo" {
   instance_type = var.instance_type
   vpc_security_group_ids = data.aws_security_groups.sg.ids
   tags = {
-    name="mongo"
+    Name="mongo"
   }
 }
 resource "aws_route53_record" "mongo"{
@@ -33,7 +33,7 @@ resource "aws_instance" "catalogue" {
   instance_type = var.instance_type
   vpc_security_group_ids = data.aws_security_groups.sg.ids
   tags = {
-    name="catalogue"
+    Name="catalogue"
   }
 }
 resource "aws_route53_record" "catalogue"{
